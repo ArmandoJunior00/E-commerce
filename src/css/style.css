@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,17 +7,17 @@
     list-style: none;
 }
 
-:root{
-    --bg-color:var(--bg-color) #101113;
-    --text-color:var(--text-color) #fff;
-    --main-color:var(--main-color) #34e7f8;
-    --other-color:var(--other-color) #fcfcfc;
+:root {
+    --bg-color: var(--bg-color) #101113;
+    --text-color: var(--text-color) #fff;
+    --main-color: var(--main-color) #34e7f8;
+    --other-color: var(--other-color) #fcfcfc;
     --h1-font: 4rem;
     --p-font: 1rem;
 
 }
 
-header{
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -29,30 +29,30 @@ header{
     padding: 30px 8%;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
-    color:#fff;
+    color: #fff;
     font-size: 28px;
     font-weight: bold;
 }
 
-.logo i{
-    color:#34e7f8;
+.logo i {
+    color: #34e7f8;
     font-size: 32px;
     margin-right: 5px;
 }
 
-body{
-    background-color: #101113;
+body {
+    background-color: #1d2631;
     color: #fff;
 }
 
-.navegacao{
+.navegacao {
     display: flex;
 }
 
-.navegacao a{
+.navegacao a {
     color: #fcfcfc;
     font-size: 1rem;
     font-weight: 500;
@@ -61,16 +61,16 @@ body{
 
 }
 
-.navegacao a:hover{
-    color:#34e7f8 ;
+.navegacao a:hover {
+    color: #34e7f8;
 }
 
-.header-icons{
+.header-icons {
     display: flex;
     align-items: center;
 }
 
-#menu{
+#menu {
     font-size: 25px;
     color: #fff;
     z-index: 1001;
@@ -78,14 +78,68 @@ body{
 
 }
 
-.header-icons i{
+.header-icons i {
     margin-right: 25px;
     font-size: 22px;
     cursor: pointer;
     transition: all .5s ease;
 }
 
-.header-icons i:hover{
+.header-icons i:hover {
     transform: translateY(-5px);
     color: #34e7f8;
+}
+
+.home {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.home-text h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+.home-text h5 {
+    color:#ffffff99;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.home-text h3 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+.home-img img{
+    max-width: 100%;
+    width: 28rem;
+    height: auto;
+    margin-left: 25%;
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px 70px;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    border: solid 2px #fff;
+    transition: all .55s ease;
+    color: #fff;
+}
+
+.btn:hover{
+    background: #fff;
+    border: 2px solid #fff;
+    color: #000;
 }
